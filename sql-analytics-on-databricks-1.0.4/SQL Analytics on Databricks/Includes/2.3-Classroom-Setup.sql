@@ -1,0 +1,8 @@
+-- Databricks notebook source
+-- MAGIC %run ./Classroom-Setup-Common
+
+-- COMMAND ----------
+
+-- Change the default catalog/schema
+USE CATALOG samples;
+USE SCHEMA nyctaxi;

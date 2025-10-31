@@ -1,0 +1,150 @@
+------------------------------------
+-- Instruções de Demonstração
+------------------------------------
+
+-- 1. Certifique-se de que a opção "New SQL editor" está ativada na parte superior do ecrã. (se a opção não aparecer no ecrã, clique no menu kebab (⋮) no SQL Editor e ative-a a partir daí)
+
+
+-- 2. No canto superior direito, selecione o seu warehouse partilhado, se necessário.
+
+
+-- 3. No menu dropdown acima, selecione o catálogo "dbacademy" e o seu esquema "labuser", se necessário.
+-- Isto irá definir manualmente o catálogo e o esquema default para esta query.
+
+
+-- 4. Clique no ícone de três reticências à direita do nome do seu ficheiro para visualizar as opções de navegação disponíveis.
+-- a. Selecione "View".
+-- b. Selecione "Workspace theme". Aqui pode modificar o tema, se desejar.
+-- c. Existe uma variedade de outras opções. Por enquanto, feche as opções.
+
+
+-- 5. Destaque a instrução SELECT abaixo e clique no botão "Run selected" acima.
+-- Confirme se o seu catálogo predefinido é "dbacademy" e se o seu esquema atual é "labuser".
+
+SELECT current_catalog(), current_schema();
+
+
+-- 6. Destaque a instrução SELECT abaixo e clique no botão "Run selected" acima.
+-- Confirme se os resultados mostram 10 linhas da tabela "aus_customers".
+
+SELECT *
+FROM aus_customers
+LIMIT 10;
+
+-- 7. Destaque as duas instruções SELECT abaixo e clique no botão "Run selected" acima.
+
+SELECT *
+FROM aus_customers
+LIMIT 10;
+
+SELECT *
+FROM aus_opportunities
+LIMIT 10;
+
+-- 8. Verifique a janela de saída abaixo. Deve exibir "Results n of 2".
+-- Clique na seta para a frente ou para trás para visualizar o outro resultado. Ao executar várias queries com resultados, pode navegar pela saída.
+
+
+-- 9. Clique no menu dropdown junto a "Table" em qualquer um dos resultados abaixo.
+-- Verá várias opções para download ou copiar os resultados.
+
+
+-- 10. Clique no ícone "+" ao lado de qualquer um dos resultados abaixo.
+-- Isto permite criar visualizações com base nos resultados SQL, semelhante a um notebook.
+
+
+-- 11. Conclua os seguintes passos para adicionar um parâmetro a uma query:
+
+-- a. Na query abaixo, posicione o cursor após o sinal '=' na cláusula "WHERE state =".
+
+SELECT *
+FROM aus_opportunities
+WHERE state =  ; -- Coloque o cursor após o sinal de igual e antes do ponto e vírgula
+
+-- b. Clique no botão "Add Parameter" abaixo.
+
+--  c. Clique na roda de definições e configure o seguinte:
+-- c1. Nome do parâmetro: my_state_value
+-- c2. Rótulo do widget: Valor do estado
+-- c3. Tipo de widget: Texto
+-- c4. Tipo de parâmetro: String
+-- c5. Valor default do parâmetro: SA
+
+-- d. Atualize a query do passo a substituindo ":param" na cláusula WHERE por ":my_state_value".
+
+-- e. Destaque a query do passo a que inclui o parâmetro ":my_state_value" e clique em "Run selected".
+
+-- f. Visualize os resultados, que filtrarão as linhas para mostrar apenas aquelas em que o estado é "SA", devolvendo 13 linhas.
+
+
+-- 12. Execute a query abaixo para visualizar as linhas da tabela "aus_opportunities".
+-- Em seguida, filtre os resultados utilizando filtros de linguagem natural gerados pelo IA. Faça o seguinte:
+
+SELECT *
+FROM aus_opportunities;
+
+-- a. Clique no ícone de filtro na saída de resultados abaixo (na extremidade direita da secção de saída).
+
+-- b. No pop-up do filtro, introduza "valor inferior a 1000".
+
+-- c. Note que os resultados são filtrados usando linguagem natural e são devolvidas 97 linhas.
+
+
+
+-- 13. Para agendar um ficheiro SQL, clique primeiro no botão "Save" para ativar o agendamento. De seguida, clique no comando "Schedule" no canto superior direito deste ficheiro. Cancele o agendamento (também disponível com Notebooks).
+
+
+-- 14. Para partilhar um ficheiro SQL, clique no comando "Share" no canto superior direito do ficheiro. Feche a partilha (também disponível com Notebooks).
+
+
+-- 15. Para guardar as alterações no ficheiro SQL, clique no botão "Save" no canto superior direito deste ficheiro.
+
+
+-- 16. Execute a query abaixo e visualize os resultados.
+SELECT 
+  phase, count(*) AS total_opportunities
+FROM aus_opportunities
+GROUP BY phase;
+
+-- a. Note que o filtro definido anteriormente ainda é apresentado. Selecione o "X" para remover o filtro.
+
+
+
+-- 17. Para visualizar as sugestões de otimização da query, clique em "Optimize" no canto inferior direito. O assistente irá exibir sugestões de otimização.
+-- Feche o chat quando terminar.
+
+
+-- 18. Para visualizar o desempenho da query, expanda "See performance" na parte inferior do ecrã. Em seguida, selecione a query.
+-- Pode verificar o desempenho das suas queries aqui.
+
+
+-- 19. Também pode usar o dobramento de código. O dobramento de código oculta código desnecessário, permitindo-lhe concentrar-se no que é relevante para a sua tarefa atual.
+-- Coloque o cursor à esquerda da instrução SELECT, entre os números das linhas e o "S". Uma seta deverá aparecer. Clique na seta para recolher o código, se preferir.
+
+SELECT 
+  opportunityid,
+  customerid,
+  state,
+  date,
+  amount,
+  salesrep,
+  phase
+FROM aus_opportunities
+LIMIT 10;
+
+
+-- 20. Por fim, abra o Databricks Assistant clicando no ícone do assistente na barra de navegação à esquerda, por baixo do ícone do catálogo que utilizou anteriormente. O Databricks Assistant será apresentado.
+-- Feche o assistente quando terminar.
+
+
+------------------------------------------------------------
+-- Resumo do Editor SQL Unificado
+------------------------------------------------------------
+
+-- Apresentamos a nova publicação do blog do editor SQL: https://www.databricks.com/blog/introducing-new-sql-editor
+
+-- O novo editor SQL oferece uma experiência de criação SQL unificada e simplificada com vários resultados de instruções, colaboração em tempo real e integrações melhoradas com o Databricks Assistant.
+
+-- O editor apresenta uma produtividade melhorada com uma paleta de comandos, dobramento de código e temas personalizáveis, bem como filtros gerados por IA e um navegador de ficheiros de workspace.
+
+-- O novo editor SQL está disponível em todos os clouds hoje, e os utilizadores podem ativá-lo clicando no banner 'New SQL editor: OFF' e definindo o botão de alternância para 'ON'.

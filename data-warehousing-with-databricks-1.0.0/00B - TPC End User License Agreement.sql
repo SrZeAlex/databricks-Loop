@@ -1,0 +1,311 @@
+-- Databricks notebook source
+-- MAGIC %md
+-- MAGIC # CONTRATO DE LICENÇA DE USUÁRIO FINAL TPC
+-- MAGIC Versão 2.2
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC ## O SOFTWARE TPC ESTÁ DISPONÍVEL GRATUITAMENTE PELA TPC
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC ## Termos e Condições
+-- MAGIC
+-- MAGIC LEIA ATENTAMENTE OS TERMOS E CONDIÇÕES DESTE CONTRATO ("CONTRATO") 
+-- MAGIC ANTES DE INSTALAR OU UTILIZAR O SOFTWARE QUE O ACOMPANHA. INSTALANDO OU 
+-- MAGIC USANDO O SOFTWARE OU DOCUMENTAÇÃO RELACIONADA, VOCÊ CONCORDA EM FICAR VINCULADO POR 
+-- MAGIC OS TERMOS DESTE CONTRATO. SE VOCÊ NÃO CONCORDA COM OS TERMOS DESTE 
+-- MAGIC ACORDO, NÃO INSTALE OU USE O SOFTWARE. SE VOCÊ ESTIVER ACESSANDO O 
+-- MAGIC SOFTWARE EM NOME DA SUA ORGANIZAÇÃO, VOCÊ DECLARA E GARANTE QUE 
+-- MAGIC VOCÊ TEM AUTORIDADE SUFICIENTE PARA VINCULAR SUA ORGANIZAÇÃO A ISSO 
+-- MAGIC ACORDO. 
+-- MAGIC
+-- MAGIC O USO E A REEXPORTAÇÃO DO SOFTWARE ESTÃO SUJEITOS À EXPORTAÇÃO DOS ESTADOS UNIDOS 
+-- MAGIC REGULAMENTOS DE ADMINISTRAÇÃO DE CONTROLE. O SOFTWARE NÃO PODE SER USADO POR 
+-- MAGIC PESSOAS OU ENTIDADES NÃO LICENCIADAS NEM PODEM SER REEXPORTADAS PARA OUTRA 
+-- MAGIC PAÍS. CONSULTE GARANTIA DE EXPORTAÇÃO (CLÁUSULA 13) DESTA LICENÇA. 
+-- MAGIC
+-- MAGIC Este é um acordo legal entre você (ou, se você estiver acessando o 
+-- MAGIC software em nome de sua organização, sua organização) ("Você" ou 
+-- MAGIC "Usuário") e o Transaction Processing Performance Council ("TPC"). Este 
+-- MAGIC acordo estabelece os termos e condições em que a TPC oferece 
+-- MAGIC licenciar o Software, incluindo, mas não limitado a, o código-fonte, 
+-- MAGIC scripts, programas executáveis, drivers, bibliotecas e arquivos de dados 
+-- MAGIC associados a tais programas, e suas modificações (o 
+-- MAGIC "Software") e documentação online, eletrônica ou impressa 
+-- MAGIC ("Documentação", juntamente com o Software, "Materiais"). 
+-- MAGIC
+-- MAGIC LICENÇA
+-- MAGIC
+-- MAGIC 1. Definições
+-- MAGIC
+-- MAGIC "Sumário Executivo", um breve resumo dos resultados de um resultado de benchmark TPC 
+-- MAGIC que mostra a configuração, as métricas primárias, os dados de desempenho e 
+-- MAGIC detalhes de preços. Os requisitos exatos para o Sumário Executivo são 
+-- MAGIC definido em cada TPC Benchmark Standard. 
+-- MAGIC "Full Disclosure Report (FDR)" significará um documento que descreve o 
+-- MAGIC Resultado do Benchmark TPC em detalhes suficientes para que o Resultado possa ser 
+-- MAGIC recriado. Os requisitos exatos para o FDR são definidos em cada TPC Benchmark Standard. 
+-- MAGIC "TPC Benchmark Result (Result)" deverá significar um teste de desempenho apresentado 
+-- MAGIC ao TPC atestado para atender aos requisitos de um TPC Benchmark Standard 
+-- MAGIC no momento da submissão. Um resultado é documentado por um Sumário Executivo e, se necessário, um FDR. 
+-- MAGIC "TPC Benchmark Standard" significará uma especificação de referência TPC e 
+-- MAGIC qualquer código associado ou binários aprovados pelo TPC. Os vários TPC Benchmark Standards podem ser encontrados em 
+-- MAGIC https://tpc.org/tpc_documents_current_versions/current_specifications5.asp. 
+-- MAGIC "Políticas TPC" significará os princípios orientadores de como o TPC 
+-- MAGIC conduz suas operações e negócios. As políticas atuais do TPC podem ser 
+-- MAGIC encontradas em https://tpc.org/tpc_documents_current_versions/current_specifications5.asp. 
+-- MAGIC
+-- MAGIC 2. Propriedade. Os Materiais são licenciados, não vendidos, a Você apenas para uso 
+-- MAGIC nos termos deste Contrato. Como entre Você e TPC (e, para o 
+-- MAGIC na medida aplicável, seus licenciadores), TPC retém todos os direitos, títulos e 
+-- MAGIC interesse sobre e propriedade dos Materiais e reserva-se todos os direitos não concedidos expressamente a Você. 
+-- MAGIC
+-- MAGIC 3. Concessão de licença. Sujeito à sua conformidade em todos os aspectos materiais 
+-- MAGIC com os termos e condições deste Contrato, a TPC concede a Você um 
+-- MAGIC Licença restrita, não exclusiva e revogável para instalar e usar o 
+-- MAGIC Materiais, mas apenas conforme expressamente permitido neste documento. Você só pode usar o 
+-- MAGIC Software em sistemas de computador sob seu controle direto. Você pode baixar 
+-- MAGIC várias cópias dos Materiais e fazer cópias literais do 
+-- MAGIC original do Software, desde que o uso de tais cópias esteja em conformidade 
+-- MAGIC com os termos deste Contrato. 
+-- MAGIC a. Uso por pessoa física. Se Você estiver acessando os Materiais como um 
+-- MAGIC individual, somente Você (como indivíduo) pode acessar e usar o 
+-- MAGIC Materiais. 
+-- MAGIC b. Uso por Organização. Se Você estiver acessando os Materiais em nome de 
+-- MAGIC Sua organização, somente Você e aqueles dentro de Sua organização podem usar 
+-- MAGIC os Materiais. Sua organização deve identificar uma pessoa de contato para o TPC 
+-- MAGIC e realizar comunicações com a TPC por meio dessa pessoa de contato. 
+-- MAGIC
+-- MAGIC 4. Restrições. As seguintes restrições aplicam-se a toda a utilização do 
+-- MAGIC Materiais de sua autoria. 
+-- MAGIC a. Geral: Você não pode: 
+-- MAGIC (1) usar, copiar, imprimir, modificar, adaptar, criar trabalhos derivados de, 
+-- MAGIC comercializar, entregar, alugar, arrendar, sublicenciar, fazer, ter feito, ceder, 
+-- MAGIC penhorar, transferir, vender, oferecer para vender, importar, reproduzir, distribuir, 
+-- MAGIC executar publicamente, publicamente exibir ou de outra forma conceder direitos aos
+-- MAGIC Materiais, ou qualquer cópia dos mesmos, no todo ou em parte, exceto quando expressamente 
+-- MAGIC permitido por este Acordo; ou 
+-- MAGIC (2) usar os Materiais de qualquer forma que não esteja em conformidade com todas as
+-- MAGIC leis e regulamentos aplicáveis. 
+-- MAGIC b. Modificação: Você pode modificar o Software. 
+-- MAGIC c. Divulgação Pública: Você não pode divulgar publicamente qualquer desempenho 
+-- MAGIC resultados produzidos durante o uso do Software, exceto nos seguintes 
+-- MAGIC circunstâncias: 
+-- MAGIC (1) como parte de um Resultado de TPC Benchmark. Para efeitos do presente acordo, um 
+-- MAGIC "TPC Benchmark Result" é um teste de desempenho submetido ao TPC, 
+-- MAGIC documentado por um Full Disclosure Report e Sumário Executivo, alegando 
+-- MAGIC para atender aos requisitos de um TPC Benchmark Standard oficial. Você 
+-- MAGIC concorda que os resultados do TPC Benchmark só podem ser publicados de acordo com 
+-- MAGIC com as Políticas TPC. Visualizável em http: www.tpc.org 
+-- MAGIC (2) como parte de um esforço acadêmico ou de pesquisa que não implique ou 
+-- MAGIC declarar uma posição de marketing 
+-- MAGIC (3) qualquer outro uso do Software, desde que quaisquer resultados de desempenho 
+-- MAGIC deve ser claramente identificado como não sendo comparável ao resultados de TPC Benchmark a menos que especificamente autorizado pela TPC. 
+-- MAGIC
+-- MAGIC 5. Modificação de licença. Os pedidos de modificação desta licença deverão 
+-- MAGIC ser endereçados a info@tpc.org. Você não pode remover ou modificar esta licença 
+-- MAGIC sem permissão. 
+-- MAGIC
+-- MAGIC 6. Direitos autorais. Os Materiais são de propriedade da TPC e/ou de seus licenciadores, e 
+-- MAGIC são protegidos pelas leis de direitos autorais dos Estados Unidos e provisões de tratados internacionais. Você não pode remover o aviso de direitos autorais do original ou 
+-- MAGIC qualquer cópia dos Materiais, e você deve aplicar o aviso se você extrair 
+-- MAGIC parte dos Materiais que não contém um aviso. 
+-- MAGIC
+-- MAGIC 7. Uso do Nome. Você reconhece e concorda que a TPC possui todas as marcas registradas 
+-- MAGIC e direitos de nome comercial sobre os nomes, marcas e logotipos usados pela TPC em 
+-- MAGIC os Materiais. O Usuário deverá preservar quaisquer avisos relativos a tal propriedade. 
+-- MAGIC O Usuário só pode usar tais nomes, marcas registradas e logotipos de acordo com 
+-- MAGIC as diretrizes de uso especificadas pelas Políticas TPC. 
+-- MAGIC
+-- MAGIC 8. Fusão ou Integração. Qualquer parte dos Materiais mesclados em ou 
+-- MAGIC integrado com outro software ou documentação continuará a ser 
+-- MAGIC sujeito aos termos e condições deste Contrato. 
+-- MAGIC
+-- MAGIC 9. Concessões limitadas de sublicença. Você pode distribuir o software como 
+-- MAGIC fornecido ou modificado conforme permitido pela cláusula 4 b. deste 
+-- MAGIC Contrato, desde que Você cumpra todos os termos deste Contrato 
+-- MAGIC e as seguintes condições: 
+-- MAGIC
+-- MAGIC a. Se Você distribuir qualquer parte do software em sua forma original 
+-- MAGIC Você pode fazê-lo somente sob este Contrato, incluindo uma cópia completa deste Acordo com a sua distribuição, e se Você distribuir o 
+-- MAGIC Software em forma modificada, você só pode fazê-lo sob uma licença que no mínimo 
+-- MAGIC fornece todas as proteções e condições de uso contidas 
+-- MAGIC dentro deste Acordo; 
+-- MAGIC
+-- MAGIC b. Você deve incluir em cada cópia do Software que você distribui o 
+-- MAGIC seguindo a legenda em todas as letras maiúsculas, na parte superior do rótulo e da licença, e 
+-- MAGIC numa fonte não inferior a 12 pontos e não menos proeminente do que qualquer outra 
+-- MAGIC impressão: "THE TPC SOFTWARE IS AVAILABLE WITHOUT CHARGE FROM TPC."; 
+-- MAGIC
+-- MAGIC c. Você deve reter todos os direitos autorais, patentes, marcas registradas e atribuições 
+-- MAGIC avisos que estão presentes no Software; e 
+-- MAGIC
+-- MAGIC d. Você não pode cobrar uma taxa pela distribuição deste Software, 
+-- MAGIC incluindo quaisquer modificações permitidas pela cláusula 4.b. 
+-- MAGIC
+-- MAGIC 10. Prazo e Rescisão. 
+-- MAGIC a. Vigência. A licença concedida a Você é válida até ser rescindida. 
+-- MAGIC b. Rescisão. 
+-- MAGIC (1) Por Você. Você pode rescindir este Contrato a qualquer momento, retornando 
+-- MAGIC os Materiais (incluindo quaisquer partes ou cópias dos mesmos) para a TPC ou 
+-- MAGIC fornecer notificação por escrito ao TPC de que todas as cópias dos Materiais 
+-- MAGIC sob sua custódia ou controle foram excluídos ou destruídos. 
+-- MAGIC (2) Por TPC. No caso de Você materialmente deixar de cumprir qualquer termo ou 
+-- MAGIC condição deste Contrato, e Você não remediar tal descumprimento 
+-- MAGIC no prazo de 30 dias a contar do recebimento da notificação para esse fim, TPC então  
+-- MAGIC terá o direito de rescindir o presente Acordo imediatamente após 
+-- MAGIC notificação por escrito no final desse período de 30 dias. 
+-- MAGIC c. Efeito da Rescisão. Rescisão deste Contrato de acordo com 
+-- MAGIC esta cláusula, os direitos dos usuários finais não serão extintos 
+-- MAGIC sublicenciado por Você de acordo com este Contrato. Além disso, após 
+-- MAGIC rescisão e, mediante solicitação por escrito da TPC, Você concorda em (1) devolver 
+-- MAGIC os Materiais (incluindo quaisquer partes ou cópias dos mesmos) para a TPC ou (2) 
+-- MAGIC destruir imediatamente todas as cópias dos Materiais sob sua guarda ou 
+-- MAGIC controlar e informar o TPC da destruição dos Materiais. Após 
+-- MAGIC rescisão, TPC também pode impor quaisquer direitos previstos por lei. A 
+-- MAGIC disposições deste Contrato que protegem os direitos de propriedade da TPC 
+-- MAGIC e seus Licenciadores continuarão em vigor após a rescisão. 
+-- MAGIC
+-- MAGIC 11. Sem garantia; Materiais fornecidos "no estado em que se encontram". NA MEDIDA MÁXIMA 
+-- MAGIC PERMITIDO PELA LEI APLICÁVEL, OS MATERIAIS SÃO FORNECIDOS "NO ESTADO EM QUE SE ENCONTRAM" E COM 
+-- MAGIC TODAS AS FALHAS, E TPC (E SEUS LICENCIADORES) E OS AUTORES E DESENVOLVEDORES 
+-- MAGIC DOS MATERIAIS AQUI SE ISENTAM DE TODAS AS GARANTIAS, REPRESENTAÇÕES E 
+-- MAGIC CONDIÇÕES, EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, INCLUINDO, MAS NÃO 
+-- MAGIC LIMITADO A, QUAISQUER GARANTIAS, DEVERES OU CONDIÇÕES IMPLÍCITAS RELACIONADAS A 
+-- MAGIC COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, PRECISÃO OU 
+-- MAGIC COMPLETUDE DAS RESPOSTAS, RESULTADOS, ESFORÇO PROFISSIONAL, AUSÊNCIA DE VÍRUS, 
+-- MAGIC AUSÊNCIA DE NEGLIGÊNCIA, TÍTULO, USUFRUTO PACÍFICO, POSSE PACÍFICA, 
+-- MAGIC CORRESPONDÊNCIA À DESCRIÇÃO OU INFRAÇÃO. O USUÁRIO RECONHECE QUE 
+-- MAGIC OS MATERIAIS SÃO RESULTADOS DE UM ESFORÇO COOPERATIVO, SEM FINS LUCRATIVOS E 
+-- MAGIC QUE O TPC NÃO CONDUZ UM NEGÓCIO TÍPICO. O USUÁRIO ACEITA OS MATERIAIS 
+-- MAGIC "NO ESTADO EM QUE SE ENCONTRA" E SEM QUALQUER GARANTIA, EXPRESSA OU IMPLÍCITA. 
+-- MAGIC
+-- MAGIC Sem limitação, a TPC (e seus licenciadores) não garantem que 
+-- MAGIC as funções contidas no Software ou nos Materiais atenderão ao Seu 
+-- MAGIC requisitos ou que a operação do Software será 
+-- MAGIC ininterrupto, livre de erros ou livre de código malicioso. Para os fins deste parágrafo, "código malicioso" significa qualquer código de programa projetado para 
+-- MAGIC contaminar outros programas de computador ou dados de computador, consumir recursos de computador, modificar, destruir, gravar ou transmitir dados, ou em alguma outra forma usurpar o funcionamento normal do computador de forma a comprometer, sistema informático ou 
+-- MAGIC rede de computadores, incluindo vírus, cavalos de Tróia, droppers, worms, 
+-- MAGIC bombas lógicas, e afins. TPC (e seus licenciadores) não serão responsáveis 
+-- MAGIC pela exatidão de qualquer informação fornecida pela TPC ou por terceiros 
+-- MAGIC pessoal de suporte técnico, ou quaisquer danos causados, diretamente ou 
+-- MAGIC indiretamente, por atos tomados ou omissões feitas por Você como resultado de tal 
+-- MAGIC suporte técnico. 
+-- MAGIC
+-- MAGIC Você assume responsabilidade total pela seleção dos Materiais para 
+-- MAGIC alcançar os resultados pretendidos, e para a instalação, uso e resultados 
+-- MAGIC obtidos dos Materiais. Você também assume todo o risco enquanto ele 
+-- MAGIC aplica-se à qualidade e desempenho dos Materiais. Caso os materiais se provarem defeituosos, você (e não a TPC) assume toda a responsabilidade 
+-- MAGIC de toda e qualquer manutenção, reparo ou correção necessária. Alguns países/estados não permitem a exclusão de garantias implícitas, portanto, 
+-- MAGIC a exclusão acima pode não se aplicar a você. TPC (e seus licenciadores) 
+-- MAGIC também se isenta de todas as garantias de qualquer tipo se os Materiais fossem 
+-- MAGIC personalizados, reembalados ou alterados de qualquer forma por qualquer outra parte que não a TPC 
+-- MAGIC (ou seus licenciadores). 
+-- MAGIC
+-- MAGIC 12. Isenção de responsabilidade. A TPC (e seus licenciadores) não assume 
+-- MAGIC responsabilidade com relação aos Materiais, incluindo responsabilidade por 
+-- MAGIC violação de direitos de propriedade intelectual, negligência ou qualquer outra 
+-- MAGIC responsabilidade. A TPC não está ciente de qualquer violação de direitos autorais ou patente 
+-- MAGIC que possam resultar da sua concessão de direitos ao Utilizador dos Materiais. Se o usuário receber qualquer notificação de infração, tal notificação será 
+-- MAGIC imediatamente comunicado ao TPC, que terá o critério exclusivo de tomar 
+-- MAGIC ação para avaliar a reivindicação e, se possível, modificar os Materiais 
+-- MAGIC conforme necessário para evitar infrações. Caso TPC determine 
+-- MAGIC que os Materiais não podem ser modificados para evitar tal violação (ou qualquer 
+-- MAGIC outra reclamação de infração comunicada à TPC), a TPC pode encerrar esta 
+-- MAGIC Consentimento imediato. O Usuário deverá suspender o uso dos Materiais até 
+-- MAGIC As modificações para evitar reclamações de infração foram concluídas. Usuário 
+-- MAGIC renuncia a qualquer reclamação contra a TPC no caso de tais reivindicações de infração por outros. 
+-- MAGIC
+-- MAGIC 13. Garantia de Exportação. Uso e reexportação dos Materiais e assuntos relacionados 
+-- MAGIC as informações técnicas estão sujeitas à Export Administration Regulations (EAR) do Departamento de Comércio dos Estados Unidos. Usuário concorda que o Usuário (a) assume a responsabilidade pelo cumprimento de 
+-- MAGIC o EAR no uso dos Materiais e informação técnica, e (b) 
+-- MAGIC não exportará, reexportará ou divulgará diretamente ou 
+-- MAGIC indiretamente, os Materiais, dados técnicos, ou qualquer produto direto do 
+-- MAGIC Materiais ou dados técnicos em violação da EAR. 
+-- MAGIC
+-- MAGIC 14. Limitação de recursos legais e danos. EM HIPÓTESE ALGUMA A TPC OU SUA 
+-- MAGIC OS LICENCIADORES OU LICENCIADOS NÃO SERÃO RESPONSÁVEIS POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS OU 
+-- MAGIC DANOS CONSEQUENTES OU POR QUAISQUER LUCROS CESSANTES, ECONOMIAS PERDIDAS, PERDAS 
+-- MAGIC RECEITAS OU DADOS PERDIDOS DECORRENTES OU RELACIONADOS AOS MATERIAIS OU A ESTE 
+-- MAGIC ACORDO, MESMO QUE A TPC OU SEUS LICENCIADORES OU LICENCIADOS TENHAM SIDO AVISADOS 
+-- MAGIC A POSSIBILIDADE DE TAIS DANOS. EM HIPÓTESE ALGUMA DA TPC OU SEUS 
+-- MAGIC A RESPONSABILIDADE OU OS DANOS DOS LICENCIANTES A VOCÊ OU A QUALQUER OUTRA PESSOA JAMAIS EXCEDEM 
+-- MAGIC U.S. CEM DÓLARES (US$ 100), INDEPENDENTEMENTE DA FORMA DA REIVINDICAÇÃO. 
+-- MAGIC EM NENHUMA CIRCUNSTÂNCIA O LICENCIADO SERÁ RESPONSÁVEL POR OU CAUSARÁ DANOS À TPC OU QUALQUER OUTRO 
+-- MAGIC A RESPONSABILIDADE OU OS DANOS A TPC OU QUALQUER OUTRA PESSOA JAMAIS EXCEDERÃO $1.000.000, INDEPENDENTEMENTE DA FORMA DA REIVINDICAÇÃO. Alguns 
+-- MAGIC países/estados não permitem a limitação ou exclusão de responsabilidade 
+-- MAGIC para danos incidentais ou consequenciais, portanto, a limitação acima ou 
+-- MAGIC a exclusão pode não se aplicar a Você. 
+-- MAGIC
+-- MAGIC 15. Direitos Restritos do Governo dos EUA. Todo o software e afins 
+-- MAGIC A documentação é fornecida com direitos restritos. Utilização, duplicação ou 
+-- MAGIC a divulgação pelo governo dos EUA está sujeita a restrições conforme estabelecido 
+-- MAGIC na subdivisão (b)(3)(ii) dos Direitos sobre Dados Técnicos e 
+-- MAGIC Cláusula de Software de Computador em 252.227-7013. Se Você estiver usando o Software 
+-- MAGIC fora dos Estados Unidos, Você cumprirá com as leis locais aplicáveis do seu país, lei de controle de exportação dos EUA e a versão em inglês deste Acordo. 
+-- MAGIC
+-- MAGIC 16. Contratante/Fabricante. O Contratante/Fabricante do 
+-- MAGIC Software é: 
+-- MAGIC
+-- MAGIC Transaction Processing Performance Council
+-- MAGIC 572B Ruger Street, P.O. Box 29920 San Francisco, CA 94129
+-- MAGIC
+-- MAGIC 17. Geral. Este Contrato é vinculativo para Você, bem como para seus funcionários, 
+-- MAGIC empregadores, empreiteiros e agentes, e sobre quaisquer sucessores e cessionários. 
+-- MAGIC Este Contrato é regido pelas leis do Estado da Califórnia 
+-- MAGIC (exceto na medida em que a lei federal rege direitos autorais e marcas registradas) 
+-- MAGIC independentemente de quaisquer disposições da lei da Califórnia que possam causar 
+-- MAGIC aplicação da lei de outro estado ou país. As partes acordam 
+-- MAGIC que a Convenção das Nações Unidas sobre Contratos para a Venda Internacional de Mercadorias não regerá este Contrato. Este Contrato é o 
+-- MAGIC acordo integral entre nós em relação ao assunto aqui tratado e 
+-- MAGIC substitui quaisquer outros entendimentos ou acordos com relação ao 
+-- MAGIC Materiais ou o assunto deste documento. Se alguma disposição deste Acordo for considerada inválida ou inexequível por qualquer tribunal que tenha 
+-- MAGIC jurisdição, essa disposição específica será considerada modificada para o 
+-- MAGIC na medida do necessário para tornar a disposição válida e executável, e 
+-- MAGIC as demais disposições permanecerão em pleno vigor e efeito. 
+-- MAGIC
+-- MAGIC DISPOSIÇÕES ESPECIAIS APLICÁVEIS À UNIÃO EUROPEIA
+-- MAGIC
+-- MAGIC Se Você adquiriu os Materiais na União Europeia (UE), 
+-- MAGIC as disposições no seguinte também se aplicam a Você. Se houver alguma inconsistência entre o 
+-- MAGIC termos do Contrato de Licença de Software estabelecidos anteriormente e o 
+-- MAGIC As disposições seguintes terão precedência sobre as disposições seguintes. 
+-- MAGIC
+-- MAGIC 1. Distribuição. Você pode sublicenciar modificações do Software 
+-- MAGIC abrangidos pelo presente Acordo se cumprirem os requisitos da cláusula 9 
+-- MAGIC acima. 
+-- MAGIC
+-- MAGIC 2. Garantia limitada. EXCETO CONFORME DECLARADO ANTERIORMENTE NESTE CONTRATO, E COMO 
+-- MAGIC FORNECIDO SOB O TÍTULO "DIREITOS ESTATUTÁRIOS", O SOFTWARE É FORNECIDO 
+-- MAGIC NO ESTADO EM QUE SE ENCONTRA, SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, 
+-- MAGIC INCLUINDO, MAS NÃO LIMITADO A, QUAISQUER GARANTIAS IMPLÍCITAS, NÃO VIOLAÇÃO, 
+-- MAGIC OU CONDIÇÕES DE COMERCIALIZAÇÃO, QUALIDADE E ADEQUAÇÃO A UM DETERMINADO 
+-- MAGIC PROPÓSITO. 
+-- MAGIC
+-- MAGIC 3. Limitação de Reparação e Danos. AS LIMITAÇÕES DAS SOLUÇÕES LEGAIS E 
+-- MAGIC AS LIMITAÇÕES DOS DANOS NO CONTRATO DE LICENÇA DE SOFTWARE NÃO SE APLICAM A DANOS PESSOAIS 
+-- MAGIC LESÃO (INCLUINDO MORTE) A QUALQUER PESSOA CAUSADA POR NEGLIGÊNCIA DA TPC E 
+-- MAGIC ESTÃO SUJEITOS AO DISPOSTO NO TÍTULO "ESTATUTÁRIO" 
+-- MAGIC DIREITOS". 
+-- MAGIC
+-- MAGIC 4. Direitos Estatutários: A legislação irlandesa prevê que certas condições e 
+-- MAGIC As garantias podem estar implícitas em contratos de venda de bens e em 
+-- MAGIC contratos de prestação de serviços. Tais condições e garantias são 
+-- MAGIC Excluem-se, na medida em que tal exclusão, no contexto do presente 
+-- MAGIC transação, é lícito de acordo com a lei irlandesa. Por outro lado, tais condições e 
+-- MAGIC Garantias, na medida em que não possam ser legalmente excluídas, aplicam-se. 
+-- MAGIC Por conseguinte, nada no presente Acordo prejudicará quaisquer direitos que 
+-- MAGIC Pode usufruir em virtude das Seções 12, 13, 14 ou 15 da Lei de Venda de Mercadorias da Irlanda 
+-- MAGIC da Lei de Venda de Mercadorias de 1893 (conforme alterado). 
+-- MAGIC
+-- MAGIC 5. Geral. Este Contrato é regido pelas leis da República da 
+-- MAGIC Irlanda. A versão em língua local do presente acordo aplica-se a: 
+-- MAGIC Materiais adquiridos na UE. Este Contrato é o acordo integral 
+-- MAGIC entre nós com relação ao assunto aqui tratado e Você concorda que 
+-- MAGIC A TPC não terá qualquer responsabilidade por qualquer declaração falsa ou 
+-- MAGIC representação feita por ela, seus agentes ou qualquer outra pessoa (seja inocentemente 
+-- MAGIC ou por negligência) em que Você se baseou ao celebrar este Contrato, 
+-- MAGIC a menos que tal declaração ou representação inverídica tenha sido feita de forma fraudulenta.
